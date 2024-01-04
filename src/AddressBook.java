@@ -35,6 +35,8 @@ public class AddressBook {
             }
         } while (choice != 4);
     }
+
+    //add contact method
     private static void add(){
         System.out.println("Enter name: ");
         String name = sc.nextLine();
@@ -45,6 +47,8 @@ public class AddressBook {
         contactList.put(name, contact);
         System.out.println("Added successfully!");
     }
+
+    //find contact method
     private static void search() {
         System.out.print("Enter contact's name to find: ");
         String name = sc.nextLine();
@@ -59,6 +63,7 @@ public class AddressBook {
         }
     }
 
+    //display contact method
     private static void display() {
         System.out.println("Address Book");
         System.out.println("Contact Name\tPhone number");
